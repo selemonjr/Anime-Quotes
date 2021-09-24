@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    background: url("../bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.container {
+    width: 30%;
+    height: 70vh;
+    background: rgba( 255, 255, 255, 0.1 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    margin: 7% 0 0 0;
+}
+.text-container {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    overflow-y: scroll;
+    position: absolute;
+}
+.text {
+    padding: 5%;
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+.author {
+    width: 100%;
+    height: 10vh;
+    margin: 70% 0 0 0;
+    font-size: 25px;
+    color: #fff;
+}
+button {
+    padding: 5px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+button:hover {
+    background: #ff0000;
+    color: #fff;
+}
+@media(max-width:700px) {
+    .container {
+        width: 80%;
+        height: 70vh;
+        position: absolute;
+        left: 10%;
+        margin: 20% 0 0 0 ;
+    }
+    .text-container {
+        overflow-y: scroll;
+        position: absolute;
+    }
+    .author {
+        width: 100%;
+        height: 10vh;
+        margin: 100% 0 5% 0;
+        font-size: 25px;
+        color: #fff;
+    }
+}
